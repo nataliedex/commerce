@@ -1,0 +1,26 @@
+<%- include ("partials/header") %>
+<!-- Start of Bootstrap Album to highlight the products -->
+<div class="container">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+      <% for(var i = 0; i < products.length; i++){ %>
+      <div class="col product-card" data-name="<%= products[i].productName %>">
+        <div class="card shadow-sm">
+          <image src="images/<%= products[i].productImg %>.png"  width="100%" height="auto"  class="bd-placeholder-img card-img-top product-cart" role="img"></image>
+          <div class="card-body">
+            <p class="card-text"><%= products[i].productName %></p>
+            <div class="d-flex justify-content-between align-items-center">
+              <small class="text-body-secondary"><%= products[i].productPrice %></small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <% } %>
+    </div>
+</div>
+<!-- End of Bootstrap Album -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/f5c210aaba.js" crossorigin="anonymous"></script>
+<%- include ("partials/footer") %>

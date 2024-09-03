@@ -1,0 +1,31 @@
+
+/* Header formating */
+header {
+    background-color: #F2C849;
+    color: #FAEBD7;
+    font-family: didot;
+}
+.nav-link{
+    color: #FAEBD7;
+}
+
+.card-text {
+    font-family: didot;
+}
+.text-body-secondary {
+    font-family: didot;
+}
+
+.active-size {
+    background-color: #4a4a4a; /* Darker gray color */
+    color: white; /* Text color to contrast with the dark background */
+}
+.active-cart {
+    background-color: #4a4a4a; /* Darker gray color */
+    color: white; /* Text color to contrast with the dark background */
+}
+
+.card {
+    font-family: didot;
+}
+

@@ -1,0 +1,18 @@
+<%- include ("partials/header") %>
+
+<div class="row featurette">
+    <div class="col-md-7 order-md-2">
+      <h2 class="featurette-heading fw-normal lh-1"><%= product.productName %></h2>
+      <h2 class="text-body-secondary"><%= product.productBrand %></h2>
+      <p class="lead"><%= product.productDescription %></p>
+       <p class="price">$<%= product.productPrice %></p>
+       <button class="btn btn-light rounded-pill px-3 product-size size-small" type="button">Small</button><button class="btn btn-light rounded-pill px-3 product-size size-medium" type="button">Medium</button><button class="btn btn-light rounded-pill px-3 product-size size-large" type="button">Large</button></br></br>
+       <button class="btn btn-light rounded-pill px-3 add-cart" type="button">Add to Cart</button>
+    </div>
+    <div class="col-md-5 order-md-1">
+      <image src="images/<%= product.productImg %>.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" role="img"></image>
+    </div>
+</div>
+
+
+<%- include ("partials/footer") %>
